@@ -2,7 +2,7 @@ services:
   - type: web
     name: stirling-pdf
     env: docker
-    dockerfilePath: ./docker/Dockerfile
+    dockerfilePath: ./docker/Dockerfile.unified
     plan: starter
     envVars:
       - key: DOCKER_ENABLE_SECURITY
