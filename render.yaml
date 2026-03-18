@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: stirling-pdf
+    env: docker
+    dockerfilePath: ./docker/Dockerfile
+    plan: starter
+    envVars:
+      - key: DOCKER_ENABLE_SECURITY
+        value: false
+      - key: INSTALL_BOOK_AND_ADVANCED_HTML_OPS
+        value: false
+      - key: LANGS
+        value: en_GB
+    healthCheckPath: /
